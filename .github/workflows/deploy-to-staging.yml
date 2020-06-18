@@ -38,7 +38,7 @@ jobs:
 
     - uses: azure/webapps-container-deploy@v1
       with:
-        app-name: 'CV19Benefits-appservice'
+        app-name: 'EsPbDtsCb19AppService'
         slot-name: 'staging'
         images: '${{ secrets.AZURE_CONTAINER_REGISTRY_SERVER }}/cv-19-benefit:${{ steps.get_version.outputs.version }}'
 
