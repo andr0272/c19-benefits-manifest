@@ -36,7 +36,7 @@ jobs:
         username: ${{ secrets.AZURE_CONTAINER_REGISTRY_USERNAME }}
         password: ${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}
 
-    - uses: azure/webapps-container-deploy@v1
+    - uses: azure/webapps-deploy@v2
       with:
         app-name: 'EsPbDtsCb19AppService'
         slot-name: 'staging'
